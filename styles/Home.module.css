@@ -1,116 +1,176 @@
-.container {
-  padding: 0 2rem;
+.body{
+    display: flex;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
+.flexColumn{
+    display: flex;
     flex-direction: column;
-  }
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    font-size: 5rem;
+    height: 20vh;
+    width: 100%;
+}
+
+.textarea{
+    color: white;
+    height: 100%;
+    width: 20%;
+    resize: none;
+    border: 0.5vh solid white;
+    border-radius: 0.5vh;
+    background-color: black;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.firstButton{
+    height: 110%;
+    margin-left: 5%;
+    border: 0.5vh solid white;
+    border-radius: 0.5vh;
+    background-color: black;
+    font-size: 5rem;
+    cursor: pointer;
+    color: white;
+}
+
+.result{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    margin: 1%;
+    font-size: 2rem;
+    text-align: center;
+    color:white
+}
+
+.resultTopBar{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.resultData{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15%;
+    border-top: 0.5vh solid white;
+    border-right: 0.5vh solid white;
+    border-left: 0.5vh solid white;
+    padding-bottom: 1%;
+}
+
+.resultRate{
+    height: 50px;
+    border: 0.5vh solid white;
+    padding-bottom: 1%;
+}
+
+.resultContent{
+    margin-top: 20vh;
+    height: 75vh;
+    overflow: auto;
+}
+
+.play{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.head{
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-size: 5rem;
+    height: 20vh;
+}
+
+.imageBox{
+    display: flex;
+    justify-content: space-around;
+    height: 40vh;
+    width: 80%;
+    text-align: center;
+}
+
+.image{
+    border: 0.5vh solid white;
+    border-radius: 0.5vh;
+    width: 20vw;
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+.buttonBox{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    height: 20%;
+    margin: 2%;
+}
+
+.button{
+    color: white;
+    width: 30%;
+    cursor: pointer;
+    font-size: 2.5rem;
+    background-color: black;
+    border: 0.5vh solid white;
+    border-radius: 0.5vh;
+    border-radius: 0.5vh;
+    border-radius: 0.5vh;
+}
+
+.round{
+    height: 20%;
+    font-size: 2.5rem;
+}
+
+.timerText{
+    height: 15%;
+    margin-top: 20%;
+    font-size: 2rem;
+}
+
+.timer{
+    height: 50%;
+    width: 40vh;
+    font-size: 5rem;
+}
+
+.onlyTopBorder{
+    border-top: 0.5vh solid white;
+}
+
+.onlyBottomBorder{
+    border-bottom: 0.5vh solid white;
+}
+
+.scissors{
+    width: 60%;
+    height: 80%;
+}
+
+.rock{
+    width: 75%;
+    height: 75%;
+}
+
+.paper{
+    width: 80%;
+    height: 80%;
 }
